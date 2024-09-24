@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upload Image - Address Extractor</title>
+  <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Upload an image to extract the address</h1>
+    <div id="upload-section">
+      <form id="upload-form">
+        <label for="file-input" id="file-label" class="btn">Choose Image</label>
+        <input type="file" id="file-input" accept="image/*" required>
+        <button type="submit" class="btn">Extract Address</button>
+      </form>
+    </div>
+    <div class="loading">
+      <div class="loading-spinner"></div>
+      <p>Extracting address...</p>
+    </div>
+  </div>
+  <script src="static/script.js"></script>
+</body>
+</html>

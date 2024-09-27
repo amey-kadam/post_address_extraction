@@ -8,19 +8,23 @@
 </head>
 <body>
   <div class="container">
-    <h1>Upload an image to extract the address</h1>
+    <h1>Extract Address from Image</h1>
+    <p class="description">Upload an image containing text to extract the address components such as street, district, state, and postal code.</p>
+    
     <div id="upload-section">
       <form id="upload-form">
-        <label for="file-input" id="file-label" class="btn">Choose Image</label>
+        <label for="file-input" id="file-label" class="btn">Choose an Image</label>
         <input type="file" id="file-input" accept="image/*" required>
         <button type="submit" class="btn">Extract Address</button>
       </form>
     </div>
+    
     <div class="loading">
       <div class="loading-spinner"></div>
-      <p>Extracting address...</p>
+      <p>Extracting address, please wait...</p>
     </div>
   </div>
+
   <script src="static/script.js"></script>
 </body>
 </html>

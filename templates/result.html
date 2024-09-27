@@ -9,13 +9,13 @@
 <body>
     <div class="container">
         <h1>Extracted Address</h1>
-        <div id="extracted-address">
-            {{ address }}{{ ', ' if address else '' }}
-            {{ district }}{{ ', ' if district else '' }}
-            {{ state }}{{ ', ' if state else '' }}
-            {{ pincode }}
+        <div id="extracted-address" class="address-box">
+            <p>{{ address }}{{ ', ' if address else '' }}</p>
+            <p>{{ district }}{{ ', ' if district else '' }}</p>
+            <p>{{ state }}{{ ', ' if state else '' }}</p>
+            <p>{{ pincode }}</p>
         </div>
-        
+
         <a href="/" class="btn">Upload Another Image</a>
     </div>
 </body>
